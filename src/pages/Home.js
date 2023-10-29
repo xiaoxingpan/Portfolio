@@ -1,8 +1,8 @@
 import React from "react";
 import About from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
+import EducationSection from "../components/EducationSection";
 import Hero from "../components/HeroSection";
-// import QuoteSection from "../components/QuoteSection";
 // import ContactSection from "../components/ContactSection";
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
       <Hero />
       <About />
       <ProjectsSection />
-      {/* <ContactSection />
-      <QuoteSection /> */}
+      <EducationSection />
+      {/* <ContactSection /> */}
     </main>
   );
 };

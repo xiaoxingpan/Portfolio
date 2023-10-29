@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-
+import WebFont from 'webfontloader';
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { HashLink } from "react-router-hash-link";
 import { useNavigate } from "react-router-dom";
 
 const navContent = [
-  {
-    label: "Home",
-    page: "home",
-  },
+  // {
+  //   label: "Home",
+  //   page: "home",
+  // },
   {
     label: "About",
     page: "about",
@@ -19,11 +19,11 @@ const navContent = [
   },
   {
     label: "Education",
-    page: "Education",
+    page: "education",
   },
   {
     label: "Work Experience",
-    page: "Work Experience",
+    page: "experience",
   },
   {
     label: "Contact",
@@ -53,23 +53,25 @@ const Header = () => {
     setMounted(true);
   }, []);
 
+
+
   if (!mounted) {
     return null;
   }
 
   return (
-    <header className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl top-0 z-50  bg-white dark:bg-stone-900 ">
+    <header className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl top-0 z-50  bg-white dark:bg-stone-900 font-sans  font-Poppins">
       <div className="justify-between md:items-center md:flex dark:bg-stone-900 dark:border-b dark:border-stone-600">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <HashLink to="/">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold cursor-pointer ">Xiaoxing Pan</h2>
+                <h2 className="text-2xl font-semibold cursor-pointer">Xiaoxing Pan</h2>
               </div>
             </HashLink>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border font-semibold"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}

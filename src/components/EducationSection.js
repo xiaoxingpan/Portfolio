@@ -1,11 +1,11 @@
-// import React from "react";
-// import { HiArrowDown } from "react-icons/hi";
+import React from "react";
 
-// var Scroll = require("react-scroll");
-// let Link = Scroll.Link;
+var Scroll = require("react-scroll");
+let Link = Scroll.Link;
 
-// const EducationSection = () => {
-//     return (<div></div>
-//     );
-// };
-// export default EducationSection;
+const EducationSection = () => {
+    return (<div>education
+    </div>
+    );
+};
+export default EducationSection;

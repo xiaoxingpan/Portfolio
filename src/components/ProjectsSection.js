@@ -1,6 +1,10 @@
 import React from "react";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+// import { HiArrowDown } from "react-icons/hi";
+
+var Scroll = require("react-scroll");
+let Link = Scroll.Link;
 
 const projects = [
   {
@@ -50,12 +54,12 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projects">
-      <h1 className="my-10 text-center font-bold text-4xl">
+      <h1 className="my-12 text-center font-bold text-4xl pt-12 font-Poppins">
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col space-y-28 font-Poppins">
         {projects.map((project, idx) => (
           <div key={idx}>
             <SlideUp offset="-300px 0px -300px 0px">
@@ -99,6 +103,21 @@ export default function ProjectsSection() {
             </SlideUp>
           </div>
         ))}
+      </div>
+      <div className="flex flex-row items-center text-center justify-center my-12 py-12">
+        <Link
+          to="education"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <div className="animate-bounce cursor-pointer"><img
+            src="assets/mouse2.png"
+            alt="scroll-down" className="rotate-180 transform origin-center"
+          /></div>
+        </Link>
       </div>
     </section>
   );

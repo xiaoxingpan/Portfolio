@@ -18,11 +18,7 @@ const navContent = [
     page: "projects",
   },
   {
-    label: "Education",
-    page: "education",
-  },
-  {
-    label: "Work Experience",
+    label: "Experience",
     page: "experience",
   },
   {
@@ -60,7 +56,7 @@ const Header = () => {
   }
 
   return (
-    <header className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl top-0 z-50  bg-white dark:bg-stone-900 font-sans  font-Poppins">
+    <header className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl top-0 z-50  bg-white dark:bg-stone-900 font-sans font-Poppins">
       <div className="justify-between md:items-center md:flex dark:bg-stone-900 dark:border-b dark:border-stone-600">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

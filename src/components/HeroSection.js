@@ -24,13 +24,13 @@ const HeroSection = () => {
             <span className="text-teal-600">Xiaoxing</span> !
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl text-center  font-Poppins">
-            I&#39;m a{" "}
+            A{" "}
             <span className="font-semibold text-teal-600">
               Full Stack developer{" "}
             </span>
-            student at John Abbott College.
-            I&#39;m Seeking for internship or employment starting Jan 15, 2024.
+            student at John Abbott College that is seeking for internship or employment starting Jan 15, 2024.
           </p>
+          <p className="text-base mt-4 mb-6 md:text-xl text-center font-Poppins">I'm committed to learning and growing in my skills, and looking forward to contribute to projects that demand a blend of technicaland adaptability.</p>
           <Link
             to="projects"
             className="text-neutral-100 font-semibold w-32 px-6 py-3 bg-teal-600 rounded shadow hover:bg-sky-600 cursor-pointer flex items-center justify-center mx-auto "

@@ -59,7 +59,7 @@ export default function ProjectsSection() {
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
-      <div className="flex flex-col space-y-28 font-Poppins">
+      <div className="flex flex-col space-y-28 font-Poppins mb-12 pb-12">
         {projects.map((project, idx) => (
           <div key={idx}>
             <SlideUp offset="-300px 0px -300px 0px">
@@ -104,9 +104,9 @@ export default function ProjectsSection() {
           </div>
         ))}
       </div>
-      <div className="flex flex-row items-center text-center justify-center my-12 py-12">
+      <div className="flex flex-row items-center text-center justify-center">
         <Link
-          to="education"
+          to="experience"
           activeClass="active"
           spy={true}
           smooth={true}

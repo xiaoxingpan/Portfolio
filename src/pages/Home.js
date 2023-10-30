@@ -1,9 +1,9 @@
 import React from "react";
 import About from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
-import EducationSection from "../components/EducationSection";
+import ExperienceSection from "../components/ExperienceSection";
 import Hero from "../components/HeroSection";
-// import ContactSection from "../components/ContactSection";
+import ContactSection from "../components/ContactSection";
 
 const Home = () => {
   return (
@@ -11,8 +11,8 @@ const Home = () => {
       <Hero />
       <About />
       <ProjectsSection />
-      <EducationSection />
-      {/* <ContactSection /> */}
+      <ExperienceSection />
+      <ContactSection />
     </main>
   );
 };

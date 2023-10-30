@@ -8,6 +8,7 @@ export const theme = {
     screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
     animation: {
       fadeIn: "fadeIn 1.5s",
+      fadeInLeft: "fadeInLeft 1.5s",
       bounce:
         "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
       slideUp: "slideUp 0.5s",
@@ -32,6 +33,16 @@ export const theme = {
       bounce: {
         from: { transform: "translateY(10px)" },
         to: { transform: "translateY(0)" },
+      },
+      fadeInLeft: {
+        from: {
+          opacity: "0",
+          transform: "translateX(-20px)",
+        },
+        to: {
+          opacity: "1",
+          transform: "translateX(0)",
+        },
       },
     },
   },

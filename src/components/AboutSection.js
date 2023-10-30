@@ -68,34 +68,35 @@ const AboutSection = () => {
             </h1>
             <p>
               Hi, my name is Xiaoxing and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> full stack developer
+              <span className="font-bold text-teal-600">{"highly ambitious"}</span>,
+              <span className="font-bold text-teal-600">{" self-motivated"}</span>, and
+              <span className="font-bold text-teal-600">{" driven"}</span> full stack developer
               based in Montreal, QC, Canada.
             </p>
             <br />
             <p>
-              I will graduate from John Abbott College in Jaunary next year and
-              start working in full stack development field.
+              I have a proven ability to
+              {" "}<span className="font-bold text-teal-600">adapt quickly</span>{" "}
+              to new technologies and environments, and I excel both
+              {" "}<span className="font-bold text-teal-600">independently</span>{" "}
+              and as part of
+              {" "}<span className="font-bold text-teal-600">a collaborative team</span>{" "}.
+              My approach to work is defined by being a{" "}
+              <span className="font-bold text-teal-600">quick learner</span>{" "},
+              {" "}<span className="font-bold text-teal-600">meticulous in every detail</span>{" "},
+              {" "}<span className="font-bold text-teal-600">rigorously organized</span>{" "}, and
+              {" "}<span className="font-bold text-teal-600">unwaveringly efficient</span>{" "}.
             </p>
             <br />
-            <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, I am always seeking new
-              experiences and love to keep myself engaged and learning new
-              things.
-            </p>
-            <br />
-            <p>
-              I believe that you should{" "}
-              <span className="font-bold text-teal-500">
-                never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
-            </p>
+            <div>
+              <ul class="list-disc pl-4">
+                <li>Email: panxx1988@gmail.com</li>
+                <li>Telephone: 514-553-1279</li>
+                <li>Social Media:
+
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="text-center md:w-1/2 md:text-center">
             <h1 className="text-2xl font-bold mb-2">My Skills</h1>

@@ -34,21 +34,19 @@ const projects = [
   {
     name: "BlackJack - Online browser-based game, Team project of 2",
     description:
-      "HTML5, CSS3, Bootstrap, Javascript, jQuery",
-    image: "assets/my-daily-wellness.png",
+      "HTML5, CSS3, Javascript, jQuery",
+    image: "assets/blackjack.png",
     github: "https://github.com/xiaoxingpan/BlackJack",
-    link: "",
+    link: "https://blackjackonline.vercel.app/",
   },
-  {
-    name: "Auction - Online bidding platform",
-    description:
-      "React, NodeJS, Sequelize, JWT, Bootstrap, RestAPI, MySQL",
-    image: "assets/my-daily-wellness.png",
-    github: "https://github.com/xiaoxingpan/REACT-NODEJS-MYSQL/tree/main/Auctions",
-    link: "",
-  },
-
-
+  // {
+  //   name: "Auction - Online bidding platform",
+  //   description:
+  //     "React, NodeJS, Sequelize, JWT, Bootstrap, RestAPI, MySQL",
+  //   image: "assets/my-daily-wellness.png",
+  //   github: "https://github.com/xiaoxingpan/REACT-NODEJS-MYSQL/tree/main/Auctions",
+  //   link: "",
+  // },
 ];
 
 export default function ProjectsSection() {

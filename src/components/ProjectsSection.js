@@ -1,6 +1,7 @@
 import React from "react";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import { RiPresentationFill } from "react-icons/ri";
 // import { HiArrowDown } from "react-icons/hi";
 
 var Scroll = require("react-scroll");
@@ -11,25 +12,36 @@ const projects = [
     name: "BookEasy - Online book purchasing website",
     description:
       "Maven, Java Spring Boot, Hibernate, JPA, Thymeleaf, Bootstrap, CSS3, RestAPI",
-    image: "assets/ecommerce.png",
+    image: "assets/bookeasy.png",
     github: "https://github.com/xiaoxingpan/MavenJavaSpringBoot/tree/main/bookeasy",
-    link: "",
+    link: "https://bookeasy-bc8482e156c2.herokuapp.com/",
+    presentation: ""
   },
   {
     name: "Photobazaar - Online photo sharing and trading platform, Team project of 3",
     description:
-      "HTML5, CSS3, Bootstrap, Javascript, jQuery",
-    image: "assets/my-daily-wellness.png",
-    github: "",
-    link: "",
+      "MERN, Tailwind, Jsonwebtoken, CORS, Axios, AWS S3, Mongoose, Stripe, Socket.io, Nodemailer",
+    image: "assets/photobazaar.png",
+    github: "https://github.com/xiaoxingpan/PhotoBazaar",
+    link: "https://photobazaar.vercel.app/",
+    presentation: "assets/photobazaar.pdf"
   },
+  // {
+  //   name: "GoldenHorizonResort - Online hotel reservation website",
+  //   description:
+  //     "Laravel, Twig, PHP, MySQL, XAMPP,CSS3, Bootstrap, Lanched on Docker with AWS EC2, VPC, DNS, NACL, WAF, load-balancers",
+  //   image: "",
+  //   github: "",
+  //   link: "",
+  // },
   {
-    name: "GoldenHorizonResort - Online hotel reservation website",
+    name: "Y - Twitter/X Clone, Team project of 3",
     description:
-      "Laravel, Twig, PHP, MySQL, XAMPP,CSS3, Bootstrap, Lanched on Docker with AWS EC2, VPC, DNS, NACL, WAF, load-balancers",
-    image: "assets/employee_management.png",
-    github: "",
-    link: "",
+      "ASP.NET Core, Razer Page, SQL Server, Bootstrap, Entity Framework Core, ASP.NET Core Identity, Azure Blob Storage, CKEditor",
+    image: "assets/y.png",
+    github: "https://github.com/xiaoxingpan/TwitterClone",
+    link: "http://fsd08-twitterclone.azurewebsites.net/",
+    presentation: "assets/y.pdf"
   },
   {
     name: "BlackJack - Online browser-based game, Team project of 2",
@@ -38,6 +50,16 @@ const projects = [
     image: "assets/blackjack.png",
     github: "https://github.com/xiaoxingpan/BlackJack",
     link: "https://blackjackonline.vercel.app/",
+    presentation: ""
+  },
+  {
+    name: "WareMaster - Desktop application for warehouse, Team project of 3",
+    description:
+      "WPF, C#, Entity Framework, SQL Server on Azure, XAML, LiveCharts, FluentValidation, MahApps.Metro, MS Test",
+    image: "assets/waremaster.png",
+    github: "https://github.com/xiaoxingpan/WareMaster",
+    link: "",
+    presentation: "assets/waremaster.pdf"
   },
   // {
   //   name: "Auction - Online bidding platform",
@@ -92,9 +114,16 @@ export default function ProjectsSection() {
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </a>
-                    ) : (
-                      <></>
+                    ) : (<></>
                     )}
+                    {project.presentation !== "" ? (
+                      <a href={project.presentation} target="_blank" rel="noreferrer">
+                        <RiPresentationFill
+                          size={30}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
+                      </a>
+                    ) : (<></>)}
                   </div>
                 </div>
               </div>

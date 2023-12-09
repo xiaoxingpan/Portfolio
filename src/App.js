@@ -17,7 +17,7 @@ function App() {
   }, []);
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={{ background: 'url("https://www.toptal.com/designers/subtlepatterns/uploads/watercolor.png")', backgroundSize: 'cover', minHeight: '100vh' }}>
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />

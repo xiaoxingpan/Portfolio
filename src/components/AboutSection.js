@@ -1,6 +1,8 @@
 import React from "react";
 // import { HiArrowDown } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { GrLinkedin } from "react-icons/gr";
+import { RxGithubLogo } from "react-icons/rx";
 
 const skills = [
   { skill: "JavaScript" },
@@ -89,11 +91,22 @@ const AboutSection = () => {
             </p>
             <br />
             <div>
-              <ul class="list-disc pl-4">
+              <ul className="list-disc pl-4">
                 <li>Email: panxx1988@gmail.com</li>
                 <li>Telephone: 514-553-1279</li>
-                <li>Social Media:
-
+                <li>
+                  <div className="flex">Social Media:
+                    <a href="https://www.linkedin.com/in/xiaoxingpan" target="_blank" rel="noreferrer">
+                      <GrLinkedin
+                        size={25}
+                        className="hover:-translate-y-1 transition-transform cursor-pointer me-2 ms-4" />
+                    </a>
+                    <a href="https://www.github.com/xiaoxingpan" target="_blank" rel="noreferrer">
+                      <RxGithubLogo href=""
+                        size={25}
+                        className="hover:-translate-y-1 transition-transform cursor-pointer mx-2" />
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>

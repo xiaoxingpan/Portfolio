@@ -102,7 +102,7 @@ const AboutSection = () => {
                         className="hover:-translate-y-1 transition-transform cursor-pointer me-2 ms-4" />
                     </a>
                     <a href="https://www.github.com/xiaoxingpan" target="_blank" rel="noreferrer">
-                      <RxGithubLogo href=""
+                      <RxGithubLogo
                         size={25}
                         className="hover:-translate-y-1 transition-transform cursor-pointer mx-2" />
                     </a>

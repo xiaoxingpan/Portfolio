@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a
-            href="https://linkedin.com/in/wei--j"
+            href="https://www.linkedin.com/in/xiaoxingpan"
             rel="noreferrer"
             target="_blank"
           >
@@ -26,7 +26,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://github.com/WeiJinCA"
+            href="https://www.github.com/xiaoxingpan"
             rel="noreferrer"
             target="_blank"
           >
@@ -35,7 +35,7 @@ const Footer = () => {
               size={30}
             />
           </a>
-          <a
+          {/* <a
             href="https://twitter.com/WeiJinCA"
             rel="noreferrer"
             target="_blank"
@@ -44,7 +44,7 @@ const Footer = () => {
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />
-          </a>
+          </a> */}
 
           {/* <a
             href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"

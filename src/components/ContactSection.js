@@ -10,6 +10,7 @@ const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isModalOpen, setModalOpen] = useState(false);
 
   //Using weather api
   // const [weatherData, setWeatherData] = useState(null);
@@ -46,6 +47,7 @@ const ContactSection = () => {
         setEmail("");
         setMessage("");
         setName("");
+        setModalOpen(true);
       },
       (error) => {
         console.log(error.text);
@@ -139,10 +141,35 @@ const ContactSection = () => {
               type="submit"
               value="Send"
               className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-sky-600 cursor-pointer
-             text-sm  text-center  "
+             text-sm text-center"
             >
               Send message
             </button>
+
+            {/* Modal */}
+            {isModalOpen && (
+              <div className="modal fixed inset-0 flex bg-black bg-opacity-30 backdrop-blur-sm items-center justify-center z-50"
+                overlayClassName="fixed inset-0"
+              >
+                <div className='bg-white p-2 rounded shadow-lg w-80'>
+                  <div className="modal-content p-2 ">
+                    <div className='font-bold text-xl mb-5 flex justify-center'>Thank you for your contact!</div>
+                    <div className='text-lg flex justify-center'>You message is send successfully.</div>
+                  </div>
+                  <div className="modal-buttons flex justify-center  mt-5">
+                    <button
+                      className="px-4 py-1 mx-5 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      onClick={() => setModalOpen(false)}>
+                      OK
+                    </button>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+            )}
           </div>
         </form>
       </div>
